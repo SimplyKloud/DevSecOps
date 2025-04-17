@@ -19,4 +19,13 @@ Create a token with following steps
   click on security
   provide a token and generate token
 
-copy these token value, org name, host name, project key and provide in pipeline yaml file
+copy these token value, org name, host name, project key and provide in pipeline yaml file.
+
+https://sonarcloud.io/create-organization?selectedAlm=manual >> login using github account
+
+dotnet sonarscanner begin \
+  /o:"simplykloud" \
+  /k:"simplykloud_projectkey" \
+  /d:sonar.host.url="https://sonarcloud.io" \
+  /d:sonar.token="d4376e429592705f037d8833e8fefbfe44fe1d20"
+
